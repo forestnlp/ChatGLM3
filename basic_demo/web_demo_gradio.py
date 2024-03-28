@@ -38,7 +38,8 @@ from transformers import (
 ModelType = Union[PreTrainedModel, PeftModelForCausalLM]
 TokenizerType = Union[PreTrainedTokenizer, PreTrainedTokenizerFast]
 
-MODEL_PATH = os.environ.get('MODEL_PATH', 'THUDM/chatglm3-6b')
+#MODEL_PATH = os.environ.get('MODEL_PATH', 'THUDM/chatglm3-6b')
+MODEL_PATH = os.environ.get('MODEL_PATH', '/root/ChatGLM3/finetune_demo/output/checkpoint-50000')
 TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH)
 
 
